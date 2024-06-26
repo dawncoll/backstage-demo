@@ -17,6 +17,14 @@ services:
       - backstage
     ports:
       - 5432:5432
+  jenkins:
+    image: liatrio/jenkins-alpine
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    networks:
+      - backstage
+    ports:
+      - 8080:8080
       
 networks:
   backstage:

@@ -17,7 +17,8 @@
 	},
 	"forwardPorts": [
 		3000,
-		7007
+		7007,
+		8080
 	],
 	"containerEnv": {
 		"POSTGRES_HOST": "db",

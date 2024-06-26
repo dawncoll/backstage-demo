@@ -43,12 +43,15 @@ import {
 } from '@backstage/core-components';
 import { githubAuthApiRef } from '@backstage/core-plugin-api';
 
+import { EntityJenkinsContent } from '@backstage/plugin-jenkins';
+
 const githubProvider: SignInProviderConfig = {
   id: 'github-auth-provider',
   title: 'GitHub',
   message: 'Sign in using GitHub',
   apiRef: githubAuthApiRef,
 };
+
 
 
 const app = createApp({
